@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/bluetoothName"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="bluetoothName"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/bluetoothAddress"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/bluetoothName"
+        android:gravity="center|left"
+        android:text="bluetoothAddress"
+        android:textSize="13sp" />
+
+
+
+
+</RelativeLayout>

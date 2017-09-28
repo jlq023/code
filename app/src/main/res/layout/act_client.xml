@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/startSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="开始搜索" />
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="11" />
+
+    <TextView
+        android:id="@+id/log1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/log"
+        android:text="22" />
+
+    <TextView
+        android:id="@+id/tip1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/log1"
+        android:text="已配对设备" />
+
+    <ListView
+        android:id="@+id/bondDevicesListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tip1"
+        android:layout_marginTop="8dip"
+        android:background="@color/wx_ui_bg"
+        android:divider="@color/gray_ef"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"></ListView>
+
+    <TextView
+        android:id="@+id/tip2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bondDevicesListView"
+        android:text="未配对设备" />
+
+    <ListView
+        android:id="@+id/unbondDevicesListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tip2"
+        android:layout_marginTop="8dip"
+        android:background="@color/wx_ui_bg"
+        android:divider="@color/gray_ef"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"></ListView>
+</RelativeLayout>
